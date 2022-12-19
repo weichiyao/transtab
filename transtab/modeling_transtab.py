@@ -720,6 +720,7 @@ class TransTabModel(nn.Module):
             hidden_dropout_prob=hidden_dropout_prob,
             ffn_dim=ffn_dim,
             activation=activation,
+            device=device
             )
 
         self.cls_token = TransTabCLSToken(hidden_dim=hidden_dim)
